@@ -1,0 +1,9 @@
+-- Задача. Вывести товары, которые ни разу не заказывали
+SELECT ProductID, ProductName
+FROM
+Products 
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM OrderDetails 
+    WHERE ProductID =ProductID
+);
