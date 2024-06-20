@@ -1,7 +1,7 @@
 db.users.aggregate([
     {
         $sort: {
-            баланс_юзера: -1
+            balance: -1
         }
     },
     {
@@ -10,8 +10,8 @@ db.users.aggregate([
     {
         $project: {
             _id: 0,
-            имя_юзера: 1,
-            баланс_юзера: 1
+            fullname: 1,
+            balance: 1
         }
     }
 ])
