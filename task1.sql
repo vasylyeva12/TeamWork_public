@@ -1,5 +1,6 @@
-SELECT * 
+SELECT DISTINCT
+Products.ProductName
 FROM Products
-LEFT JOIN OrderDetails ON Products.ProductID = OrderDetails.ProductID
-WHERE
-OrderDetails.OrderID IS NULL
+left join OrderDetails 
+on Products.ProductID = OrderDetails.ProductID
+where OrderDetails.ProductID is NULL
