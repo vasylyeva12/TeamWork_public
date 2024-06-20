@@ -1,5 +1,5 @@
 db.videos.aggregate([
-{//вход dct hjkbrb
+{//вход все ролики
      $match: {
             duration_secs: { $lt: 120 * 60 }}},
 
