@@ -3,5 +3,6 @@
 - Smolnikovs Natalia
 - Yelyzaveta Shydenko
 - Andrei Bakhtinov
+- Yevgeniia Fartushko
 - Groisman Vlad
 - Masha Voytovych
