@@ -1,0 +1,12 @@
+db.videos.aggregate([
+    {
+        $lookup: {
+            from: 'users',
+            localField: 'author_id',
+            foreignField: _id,
+            as: 'author'
+        }
+    },
+    { $sample: { size: 2 } }
+
+])
