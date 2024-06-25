@@ -1,15 +1,17 @@
-db.videos.aggregate([
-    {// вход все ролики
-        $match: {
-            duration_secs: { $lt: 120 * 60 }
-        }
-    }, //выход ролики продолжительностью до 2 часов
+db.users.aggregate([
     {
-        $count: "total"
-    }// кол-во роликов до 2 часов
+        $lookup: {
+            from: 'videos',
+            localField: '_id',
+            foreignField: 'author_id',
+            as: 'videos'
+        }
+    },
+     { $sample: { size: 2 } },
+       {
+        $project: {
+            _id: 0,
+            fullname: 1
+        }
+    }
 ])
-
-db.videos.countDocuments(
-    { duration_secs: { $lt: 120 * 60 } }
-)
-
