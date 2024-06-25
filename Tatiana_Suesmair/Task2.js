@@ -7,7 +7,7 @@ db.users.aggregate([
             as: 'videos'
         }
     },
-     { $sample: { size: 1 } },
+     { $sample: { size: 2 } },
        {
         $project: {
             _id: 0,
