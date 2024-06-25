@@ -1,4 +1,5 @@
 # TeamWork_public
+- Yuliia Pasichnyk
 - Iryna Kosiakovska
 - Smolnikovs Natalia
 - Yelyzaveta Shydenko
