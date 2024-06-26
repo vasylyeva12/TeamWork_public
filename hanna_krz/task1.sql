@@ -1,4 +1,4 @@
 UPDATE posts
-SET is_published = 'false'
+SET is_published = false
 WHERE
-    author_id = 1
+    id = 1
