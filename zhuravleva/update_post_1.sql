@@ -1,5 +1,5 @@
 UPDATE posts
 SET
-    is_blocked = true
+    is_published = true
 WHERE
     id = 1
