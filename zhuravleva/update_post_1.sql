@@ -1,5 +1,5 @@
 UPDATE posts
 SET
-    is_published = true
+    is_published = false
 WHERE
     id = 1
