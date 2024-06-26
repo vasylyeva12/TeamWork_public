@@ -1,3 +1,4 @@
 SELECT
-    COUNT(*) AS Total_posts
+    COUNT(*) AS total_posts
 FROM posts
+
