@@ -1,5 +1,5 @@
 -- Снять с публикации пост с id 1
 
-DELETE 
-FROM posts 
+UPDATE posts
+SET is_published false
 WHERE id = 1
