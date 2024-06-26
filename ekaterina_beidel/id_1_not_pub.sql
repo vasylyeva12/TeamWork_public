@@ -1,1 +1,1 @@
-INSERT INTO posts(is_published), (false)
+SET is_published = false WHERE id = 1
