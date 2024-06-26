@@ -1,5 +1,4 @@
--- Задача. Вывести товары, которые ни разу не заказывали
-SELECT * 
-FROM Products
-Left Join OrderDetails On OrderDetails.ProductID = Products.ProductID
-WHERE OrderDetails.OrderID IS NULL
+-- Задача. Снять с публикации пост с id 1
+Update posts
+set is_published = False
+Where id = 1
