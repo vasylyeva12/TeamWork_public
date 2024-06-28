@@ -1,3 +1,4 @@
-select
-sum(is_published)
-from posts;
+SELECT
+    COUNT(*) AS total_posts
+FROM
+    posts;
