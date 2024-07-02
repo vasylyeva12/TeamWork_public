@@ -5,5 +5,5 @@ db.users.updateMany(
         $unset: { is_blocked: true }
     } // action
 
-    // action
+
 )
