@@ -1,3 +1,3 @@
 db.tracks.find(
-  { duration_secs: { $lte: 60 } }
+  { duration_secs: { $lte: 3600 } }
 )
