@@ -29,3 +29,11 @@
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+
+
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
