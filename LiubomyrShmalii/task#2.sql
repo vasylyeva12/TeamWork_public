@@ -1,0 +1,3 @@
+SELECT 
+COUNT(*)
+from posts
