@@ -1,13 +1,14 @@
-
-// Задача. Вывести имена всех юзеров, кроме тех, что из China и USA
-
-db.users.find(
-    { country: { $nin: ["China", "USA"] } },
-     { fullname: 1, _id: 0 });
-
-// Задача. Вывести юзеров не из Germany
-// (проекция: все поля, кроме страны)
-db.users.find(
-    { country: { $ne: 'Germany' } },
-    { country: 0 }
+// Задача. Добавить три товара в коллекцию products
+db.products.insertMany(
+    [
+        {
+            title: "title 2",price: 5.4,quantity: 2
+        },
+        {
+            title: "title 1",price: 4.4,quantity: 1
+        },
+        {
+            title: "title 3",price: 2.2, quantity: 3
+        }
+    ]
 )
