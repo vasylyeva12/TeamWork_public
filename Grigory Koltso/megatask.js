@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 db.products.insertMany(
     [
         {
@@ -16,4 +17,9 @@ db.products.insertMany(
             quantity: 15
         }
     ]
+=======
+db.tracks.find(
+    {duration_secs:{ $lte: 60 * 60}},
+    {_id: 0, duration_secs:0}
+>>>>>>> 8389b16826fcfb2c2fcaaed2192b8e50f4408ebe
 )
